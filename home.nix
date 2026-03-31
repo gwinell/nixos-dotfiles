@@ -25,6 +25,7 @@ in
 
   home.sessionVariables = {
     TERMINAL = "alacritty";
+    GTK_USE_PORTAL = "1";
   };
 
   programs.bash = {
