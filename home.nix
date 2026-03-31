@@ -16,6 +16,7 @@ in
     ./modules/picom.nix
     ./modules/rofi.nix
     ./modules/firefox.nix
+    ./modules/nautilus.nix
   ];
 
   home.username = "arlo";
@@ -48,6 +49,18 @@ in
     recursive = true;
   };
   home.file.".p10k.zsh".source = create_symlink "${dotfiles}/zsh/.p10k.zsh";
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
+    };
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.adwaita-icon-theme;
+    };
+  };
 
   home.packages = with pkgs; [
     neovim
