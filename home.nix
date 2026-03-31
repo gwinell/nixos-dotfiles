@@ -25,7 +25,19 @@ in
 
   home.sessionVariables = {
     TERMINAL = "alacritty";
-    GTK_USE_PORTAL = "1";
+  };
+
+  xresources.properties = {
+    "Xft.dpi" = 115;
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      text-scaling-factor = 1.2;
+      font-name = "Sans 11";
+      document-font-name = "Sans 11";
+      monospace-font-name = "Monospace 11";
+    };
   };
 
   programs.bash = {

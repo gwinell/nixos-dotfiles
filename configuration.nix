@@ -59,7 +59,6 @@
     ];
     config.common.default = [
       "gtk"
-      "gnome"
     ];
   };
 
