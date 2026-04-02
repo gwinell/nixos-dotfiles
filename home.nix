@@ -99,6 +99,11 @@ in
     rustc
     rust-analyzer
     rustfmt
-
+    # Графический unzip
+    file-roller
+    # Консольные аналоги
+    unzip
+    unrar
+    p7zip
   ];
 }
